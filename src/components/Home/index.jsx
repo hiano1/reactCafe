@@ -3,13 +3,6 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { Link } from "react-router-dom";
-
-import HomeSVG from "../../assets/home.svg?react";
-import CardSVG from "../../assets/card.svg?react";
-import PotionSVG from "../../assets/potion.svg?react";
-import SnsSVG from "../../assets/sns.svg?react";
-import MenuSVG from "../../assets/menu.svg?react";
 
 import "./style.css";
 
@@ -47,25 +40,6 @@ export const Home = () => {
                     <div className="coupon"> coupon : 1</div>
                 </div>
                 <div className="mainOrderBox">mainOrderBox</div>
-            </div>
-            <div className="mainNavigation">
-                <div className="home">
-                    <Link to={`/`}>
-                        <HomeSVG width="2rem" height="2rem" />
-                    </Link>
-                </div>
-                <div className="membership">
-                    <CardSVG width="2rem" height="2rem" />
-                </div>
-                <div className="order">
-                    <PotionSVG width="2rem" height="2rem" />
-                </div>
-                <div className="sns">
-                    <SnsSVG width="2rem" height="2rem" />
-                </div>
-                <div className="control">
-                    <MenuSVG width="2rem" height="2rem" />
-                </div>
             </div>
         </>
     );

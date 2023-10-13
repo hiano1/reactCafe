@@ -1,12 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Error from "./routes/error.jsx";
-import { Home } from "./components/Home";
+import { Root } from "./routes/root.jsx";
 
 export const App = () => {
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <Home />,
+            element: <Root />,
             errorElement: <Error />,
         },
     ]);
